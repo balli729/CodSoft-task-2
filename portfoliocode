@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome CDN for font icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <!-- SEO Meta Tag -->
+    <meta name="description" content="Front-end Developer Portfolio of Balli Kumar Yadav">
+</head>
+
+<body>
+    <div class="heroheader">
+        <div class="wrapper">
+            <header>
+                <div class="logo">
+                    <div class="logo-text">BALLI KUMAR YADAV</div>
+                </div>
+                <nav>
+                    <div class="togglebtn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <ul class="navlinks">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Portfolio</a></li>
+                        <li><a href="#">Resume</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <div class="container">
+                <div class="hero-pic">
+                    <img src="1.jpg" alt="profile picture of Balli Kumar Yadav">
+                </div>
+                <div class="hero-text">
+                    <h5>Hi, I'm <span class="title">Front-end Developer</span></h5>
+                    <h1>BALLI KUMAR YADAV</h1>
+                    <p> I am highly passionate about web development, exploring the latest technologies and trends to create innovative digital solutions. My focus lies in building user-friendly platforms that enhance productivity and well-being, especially for young professionals transitioning to remote work.</p><br>
+                    <div class="btn-group">
+                        <a href="#" class="btn active">Download CV</a>
+                        <a href="#" class="btn">Contact</a>
+                    </div><br><br>
+                    <div class="social">
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-dribbble"></i></a>
+                        <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        const toggleBtn = document.querySelector('.togglebtn');
+        const navLinks = document.querySelector('.navlinks');
+
+        toggleBtn.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+    </script>
+</body>
+
+</html>
